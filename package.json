@@ -1,7 +1,7 @@
 {
   "name": "@shubhamrasal/autocomplete",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React-based AI-powered code editor component with intelligent code suggestions.",
   "type": "module",
   "main": "dist/index.js",
