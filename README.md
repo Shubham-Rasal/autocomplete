@@ -5,13 +5,13 @@ A React-based AI-powered code editor component with intelligent code suggestions
 ## Installation
 
 ```bash
-npm install @bluequbit/autocomplete
+npm install @shubhamrasal/autocomplete
 ```
 
 or
 
 ```bash
-yarn add @bluequbit/autocomplete
+yarn add @shubhamrasal/autocomplete
 ```
 
 ## Features
