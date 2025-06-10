@@ -1,0 +1,24 @@
+# Source
+src/
+demo/
+public/
+
+# Config files
+.gitignore
+.eslintrc
+.prettierrc
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+tsconfig.app.json
+tailwind.config.js
+
+# Development files
+node_modules/
+.git/
+.vscode/
+.idea/
+
+# Build artifacts
+coverage/
+*.log 
