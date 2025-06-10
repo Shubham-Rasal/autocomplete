@@ -34,11 +34,16 @@ export const AICodeEditor: React.FC<AICodeEditorProps> = ({
   className = '',
   openAIKey,
 }) => {
+  const [isClient, setIsClient] = useState(false);
   const editorRef = useRef<monaco.editor.IStandaloneCodeEditor | null>(null);
   const [status, setStatus] = useState<string>('idle');
   const [statusMessage, setStatusMessage] = useState<string>('');
   const completionProviderRef = useRef<MonacoCompletionProvider | null>(null);
   const disposableRef = useRef<monaco.IDisposable | null>(null);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleEditorDidMount: OnMount = (editor, monacoInstance) => {
     editorRef.current = editor;
@@ -72,7 +77,6 @@ export const AICodeEditor: React.FC<AICodeEditorProps> = ({
           return completionProviderRef.current?.provideInlineCompletions(
             model,
             position,
-            // We are not passing the token here, as CompletionProvider.ts does not expect it directly
           ) ?? { items: [] };
         },
         freeInlineCompletions: () => {
@@ -119,6 +123,10 @@ export const AICodeEditor: React.FC<AICodeEditorProps> = ({
     },
     ...options,
   };
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div className={className} style={{ width, height }}>
