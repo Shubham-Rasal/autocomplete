@@ -1,5 +1,5 @@
 {
-  "name": "@bluequbit/autocomplete",
+  "name": "autocomplete",
   "private": false,
   "version": "1.0.0",
   "description": "A React-based autocomplete component with AI capabilities",
@@ -24,7 +24,7 @@
     "ai",
     "typescript"
   ],
-  "author": "bluequbit",
+  "author": "Shubham-Rasal",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=18.0.0",
