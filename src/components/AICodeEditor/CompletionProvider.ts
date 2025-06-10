@@ -54,7 +54,6 @@ export class MonacoCompletionProvider {
   public async provideInlineCompletions(
     model: monaco.editor.ITextModel,
     position: monaco.Position,
-    // token: monaco.CancellationToken,
   ): Promise<monaco.languages.InlineCompletions<monaco.languages.InlineCompletion> | undefined> {
     // Set status to processing
     this.setStatus('processing');
@@ -77,7 +76,6 @@ export class MonacoCompletionProvider {
         textUntilPosition,
         model.getLanguageId(),
         completionId,
-        // token
       );
 
       if (!completion) {
@@ -120,7 +118,6 @@ export class MonacoCompletionProvider {
     code: string,
     language: string,
     completionId: string,
-    // token: monaco.CancellationToken,
   ): Promise<string | undefined> {
     try {
       const response = await this.openai.chat.completions.create({

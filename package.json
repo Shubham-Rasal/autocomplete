@@ -1,8 +1,8 @@
 {
   "name": "@shubhamrasal/autocomplete",
   "private": false,
-  "version": "1.0.1",
-  "description": "A React-based autocomplete component with AI capabilities",
+  "version": "1.0.0",
+  "description": "A React-based AI-powered code editor component with intelligent code suggestions.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -16,15 +16,16 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "npm run build"
+    "prepare": "pnpm run build"
   },
   "keywords": [
     "react",
     "autocomplete",
     "ai",
-    "typescript"
+    "typescript",
+    "monaco-editor"
   ],
-  "author": "Shubham-Rasal",
+  "author": "Shubham Rasal",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=18.0.0",
@@ -60,6 +61,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bluequbit/autocomplete"
+    "url": "https://github.com/shubhamrasal/autocomplete"
   }
 }

@@ -84,9 +84,9 @@ importers:
 
   demo:
     dependencies:
-      '@bluequbit/autocomplete':
-        specifier: workspace:*
-        version: link:..
+      '@shubhamrasal/autocomplete':
+        specifier: 1.0.1
+        version: 1.0.1(monaco-editor@0.52.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -715,6 +715,12 @@ packages:
     resolution: {integrity: sha512-LpHiJRwkaVz/LqjHjK8LCi8osq7elmpwujwbXKNW88bM8eeGxavJIKKjkjpMHAh/2xfnrt1ZSnhTv41WYUHYmA==}
     cpu: [x64]
     os: [win32]
+
+  '@shubhamrasal/autocomplete@1.0.1':
+    resolution: {integrity: sha512-mh0v8vrWgV0aKeIbGQIQM6TBEoRKyW3vrtdWnfiGvMdgHqdFVVMTV7rO6fptXmYQA796jwQ5lTz9/I17IqkwPQ==}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   '@swc/core-darwin-arm64@1.11.31':
     resolution: {integrity: sha512-NTEaYOts0OGSbJZc0O74xsji+64JrF1stmBii6D5EevWEtrY4wlZhm8SiP/qPrOB+HqtAihxWIukWkP2aSdGSQ==}
@@ -2276,6 +2282,23 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.42.0':
     optional: true
+
+  '@shubhamrasal/autocomplete@1.0.1(monaco-editor@0.52.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@monaco-editor/react': 4.7.0(monaco-editor@0.52.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@types/lodash': 4.17.17
+      '@types/uuid': 10.0.0
+      dotenv: 16.5.0
+      lodash: 4.17.21
+      openai: 4.104.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      uuid: 11.1.0
+    transitivePeerDependencies:
+      - encoding
+      - monaco-editor
+      - ws
+      - zod
 
   '@swc/core-darwin-arm64@1.11.31':
     optional: true

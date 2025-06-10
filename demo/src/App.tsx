@@ -1,4 +1,4 @@
-import { AICodeEditor } from '@bluequbit/autocomplete'
+import { AICodeEditor } from '@shubhamrasal/autocomplete'
 import './App.css'
 
 function App() {

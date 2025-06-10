@@ -3,7 +3,7 @@ import Editor, { OnMount } from '@monaco-editor/react';
 import * as monaco from 'monaco-editor';
 import { MonacoCompletionProvider } from './CompletionProvider';
 
-interface AICodeEditorProps {
+export interface AICodeEditorProps {
   language?: string;
   theme?: string;
   value?: string;
@@ -67,11 +67,11 @@ export const AICodeEditor: React.FC<AICodeEditorProps> = ({
     disposableRef.current = monacoInstance.languages.registerInlineCompletionsProvider(
       language,
       {
-        provideInlineCompletions: (model, position) => {
+        provideInlineCompletions: (model, position, _context, _token) => {
           return completionProviderRef.current?.provideInlineCompletions(
             model,
             position,
-            // token
+            // We are not passing the token here, as CompletionProvider.ts does not expect it directly
           ) ?? { items: [] };
         },
         freeInlineCompletions: () => {
