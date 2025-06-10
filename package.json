@@ -1,7 +1,7 @@
 {
   "name": "@shubhamrasal/autocomplete",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React-based autocomplete component with AI capabilities",
   "type": "module",
   "main": "dist/index.js",
