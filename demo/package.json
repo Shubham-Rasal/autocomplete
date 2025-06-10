@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@shubhamrasal/autocomplete": "1.0.1",
+    "@shubhamrasal/autocomplete": "^1.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

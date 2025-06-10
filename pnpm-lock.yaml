@@ -85,7 +85,7 @@ importers:
   demo:
     dependencies:
       '@shubhamrasal/autocomplete':
-        specifier: 1.0.1
+        specifier: ^1.0.1
         version: 1.0.1(monaco-editor@0.52.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
