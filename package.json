@@ -1,5 +1,5 @@
 {
-  "name": "autocomplete",
+  "name": "@shubham-rasal/autocomplete",
   "private": false,
   "version": "1.0.0",
   "description": "A React-based autocomplete component with AI capabilities",
