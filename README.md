@@ -1,4 +1,4 @@
-# @bluequbit/autocomplete
+# @shubhamrasal/autocomplete
 
 A React-based AI-powered code editor component with intelligent code suggestions.
 
