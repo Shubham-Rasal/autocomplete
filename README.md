@@ -2,6 +2,9 @@
 
 A React-based AI-powered code editor component with intelligent code suggestions.
 
+This component is heavily inspired by [codeium-react-code-editor](https://github.com/Exafunction/codeium-react-code-editor) but with option to use openai as provider.
+
+
 ## Installation
 
 ```bash
@@ -25,7 +28,7 @@ yarn add @shubhamrasal/autocomplete
 ## Usage
 
 ```tsx
-import { AICodeEditor } from '@bluequbit/autocomplete';
+import { AICodeEditor } from '@shubhamrasal/autocomplete';
 
 function App() {
   return (
